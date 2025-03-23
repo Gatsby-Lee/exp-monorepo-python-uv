@@ -1,0 +1,19 @@
+version = 1
+revision = 1
+requires-python = ">=3.9"
+
+[[package]]
+name = "py-basecamp"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "py-zcommonlib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "py-zcommonlib", editable = "../py-zcommonlib" }]
+
+[[package]]
+name = "py-zcommonlib"
+version = "0.1.0"
+source = { editable = "../py-zcommonlib" }

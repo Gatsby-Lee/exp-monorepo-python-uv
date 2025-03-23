@@ -1,0 +1,12 @@
+[project]
+name = "py-basecamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["py-zcommonlib"]
+
+
+# ref: https://github.com/astral-sh/uv/issues/6371
+[tool.uv.sources]
+py_zcommonlib = { path="../py-zcommonlib", editable=true }
