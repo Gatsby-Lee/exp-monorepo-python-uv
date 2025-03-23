@@ -8,5 +8,6 @@ dependencies = ["py-zcommonlib"]
 
 
 # ref: https://github.com/astral-sh/uv/issues/6371
+# ref: https://docs.astral.sh/uv/concepts/projects/dependencies/#dependency-sources
 [tool.uv.sources]
 py_zcommonlib = { path="../py-zcommonlib", editable=true }
